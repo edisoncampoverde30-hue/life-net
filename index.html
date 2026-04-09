@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Net | Private Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-banner">
+  🔒 Secure Demo Session | Data expires after 12 hours
+</div>
+
+<div id="sessionTimer" style="text-align:center; font-size:14px; margin:10px 0;">
+  Session expires in: 12:00
+</div>
+
+<header>
+  <div class="container app-header">
+    <div class="logo-area">
+      <img src="logo.png" alt="Life Net Logo" class="logo-img">
+      <h1>Life Net</h1>
+    </div>
+
+   <nav class="top-nav">
+  <a href="index.html" class="active-tab">Home</a>
+  <a href="profile.html">Profile</a>
+  <a href="review.html">Review</a>
+  <a href="appointment.html">Appointment</a>
+</nav>
+
+    <div class="nav-area">
+      <p>Stage 1: Private Support</p>
+    </div>
+  </div>
+</header>
+
+
+
+<main class="container">
+
+  <section class="welcome">
+    <h2>Welcome to Life Net</h2>
+    <p>
+      Life Net is a mental health support chatbot demo designed to guide users
+      from private support to personalized intake, professional-style review,
+      and therapist appointment booking.
+    </p>
+    <a href="#chat" class="button">Start Private Chat</a>
+  </section>
+
+<div class="security-badges">
+  <div class="badge">🔒 Encrypted Session</div>
+  <div class="badge">🕒 Auto-delete in 12 hours</div>
+  <div class="badge">🧠 AI-assisted guidance</div>
+</div>
+
+<button class="button" style="background:#ffe0e0; color:#7a1c1c;" onclick="crisisAlert()">
+  ⚠️ Need Immediate Help?
+</button>
+
+  <div class="info-box">
+    <h3>Why Life Net?</h3>
+    <ul>
+      <li>🔐 Privacy-first support experience</li>
+      <li>⏱️ Temporary session design with auto-delete concept</li>
+      <li>🧠 Guided mental health support flow</li>
+      <li>📋 Structured intake for better recommendations</li>
+    </ul>
+  </div>
+
+  <section class="form-card">
+    <h2>Stage 1: Private Support</h2>
+    <p>
+      This simulated chat demonstrates how Life Net could provide immediate,
+      low-barrier mental health support before a user creates a full profile.
+    </p>
+
+    <div class="chat-window">
+      <div class="bot">
+        <strong>Life Net:</strong> Hello. I'm here to help. How are you feeling today?
+      </div>
+
+      <div class="user">
+        <strong>User:</strong> I've been feeling overwhelmed lately.
+      </div>
+
+      <div class="bot">
+        <strong>Life Net:</strong> Thank you for sharing. Try taking a few deep breaths and focusing on one small task you can control today.
+      </div>
+
+      <div class="bot">
+        <strong>Life Net:</strong> Would you like to continue privately, or create a support profile for more personalized guidance?
+      </div>
+    </div>
+
+    <label for="demoMessage">Type a message</label>
+    <textarea id="demoMessage" placeholder="Type your message here (demo only)"></textarea>
+
+    <button type="button" onclick="demoAlert()">Send</button>
+  </section>
+
+  <div class="form-card">
+    <h3>Continue to Next Stage</h3>
+    <p>
+      If the user wants a deeper level of support, they can move to the intake stage
+      and create a profile with emotional, behavioral, and background information.
+    </p>
+    <a href="profile.html" class="button">Go to Stage 2</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>Life Net Demo | CSC 223</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

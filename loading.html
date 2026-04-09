@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Life Net | Processing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-row">
+    <div class="logo-area">
+      <img src="logo.png" class="logo-img">
+      <h1>Life Net</h1>
+    </div>
+    <div class="nav-area">
+      <p>Processing Request...</p>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="form-card" style="text-align:center;">
+
+    <h2>Analyzing Your Profile</h2>
+    <p>Please wait while Life Net processes your information.</p>
+
+    <div class="loader"></div>
+
+    <p id="loadingText">Initializing system...</p>
+
+  </section>
+
+</main>
+
+<script>
+  const messages = [
+    "Analyzing emotional patterns...",
+    "Reviewing behavior data...",
+    "Evaluating stress indicators...",
+    "Generating recommendations..."
+  ];
+
+  let index = 0;
+
+  setInterval(() => {
+    document.getElementById("loadingText").innerText = messages[index];
+    index = (index + 1) % messages.length;
+  }, 1500);
+
+  setTimeout(() => {
+    window.location.href = "review.html";
+  }, 6000);
+</script>
+
+</body>
+</html>

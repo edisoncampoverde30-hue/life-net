@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Net | Appointment Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container app-header">
+    <div class="logo-area">
+      <img src="logo.png" alt="Life Net Logo" class="logo-img">
+      <h1>Life Net</h1>
+    </div>
+
+   <nav class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="profile.html">Profile</a>
+  <a href="review.html">Review</a>
+  <a href="appointment.html" class="active-tab">Appointment</a>
+</nav>
+
+    <div class="nav-area">
+      <p>Stage 4: Appointment Booking</p>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="welcome">
+    <h2>Book a Therapist Appointment</h2>
+    <p>
+      This page demonstrates the final stage of the Life Net experience. After
+      receiving support recommendations, the user can choose a provider and submit
+      an appointment request.
+    </p>
+  </section>
+
+<div class="security-badges">
+  <div class="badge">🔒 Secure Booking Request</div>
+  <div class="badge">📅 Provider Matching</div>
+  <div class="badge">📞 Direct Contact Options</div>
+</div>
+
+
+  <div class="info-box">
+    <h3>Booking Notice</h3>
+    <p>
+      This is a class demo only. No real appointment is created. The purpose of
+      this page is to show how Life Net could connect users with mental health providers.
+    </p>
+  </div>
+
+  <form class="intake-form">
+
+    <div class="form-card">
+      <h3>Select a Provider</h3>
+
+      <label for="provider">Provider</label>
+      <select id="provider">
+        <option>Dr. Sarah Mitchell</option>
+        <option>MindCare Wellness Center</option>
+        <option>Green Path Counseling</option>
+      </select>
+
+      <label for="appointmentType">Appointment Type</label>
+      <select id="appointmentType">
+        <option>Initial Consultation</option>
+        <option>Follow-Up Session</option>
+        <option>Virtual Therapy Session</option>
+      </select>
+    </div>
+
+    <div class="form-card">
+      <h3>Choose Date and Time</h3>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date">
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time">
+    </div>
+
+    <div class="form-card">
+      <h3>Contact Information</h3>
+
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Enter full name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter email address">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter phone number">
+    </div>
+
+    <div class="form-card">
+      <h3>Additional Notes</h3>
+
+      <label for="notes">Notes for Appointment</label>
+      <textarea id="notes" placeholder="Add any notes or requests for the provider"></textarea>
+
+      <button type="button" onclick="appointmentAlert()">Confirm Appointment Request</button>
+    </div>
+
+  </form>
+
+</main>
+
+<footer>
+  <p>Life Net Demo | CSC 223</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
