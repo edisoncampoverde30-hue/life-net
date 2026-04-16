@@ -15,8 +15,7 @@ This is a **CSC 223 class project** focused on the intersection of:
 
 ## 🚀 Live Demo
 
-👉 [View the Live Website][
-](https://edisoncampoverde30-hue.github.io/life-net/)
+👉 [View the Live Website](https://edisoncampoverde30-hue.github.io/life-net/)
 
 
 ---
