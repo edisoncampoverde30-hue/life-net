@@ -32,3 +32,47 @@ setInterval(() => {
     "Session expires in: " + display;
 
 }, 1000);
+
+function toggleAccessCode() {
+  const method = document.getElementById("paymentMethod").value;
+  const section = document.getElementById("accessCodeSection");
+
+  if (method === "insurance") {
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}
+
+function showProfileForm() {
+  const method = document.getElementById("paymentMethod").value;
+  const accessCodeSection = document.getElementById("accessCodeSection");
+  const profileFormSection = document.getElementById("profileFormSection");
+
+  if (method === "insurance") {
+    accessCodeSection.style.display = "block";
+    profileFormSection.style.display = "none";
+  } else if (method === "outofpocket") {
+    accessCodeSection.style.display = "none";
+    profileFormSection.style.display = "block";
+  } else {
+    accessCodeSection.style.display = "none";
+    profileFormSection.style.display = "none";
+  }
+}
+
+function validateCode() {
+  const code = document.getElementById("accessCode").value;
+  const message = document.getElementById("codeMessage");
+  const profileFormSection = document.getElementById("profileFormSection");
+
+  if (code === "1234") {
+    message.style.color = "green";
+    message.innerText = "Access code accepted. You may continue.";
+    profileFormSection.style.display = "block";
+  } else {
+    message.style.color = "red";
+    message.innerText = "Invalid code. Please try again.";
+    profileFormSection.style.display = "none";
+  }
+}
