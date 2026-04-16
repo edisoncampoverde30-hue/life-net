@@ -15,9 +15,9 @@ This is a **CSC 223 class project** focused on the intersection of:
 
 ## 🚀 Live Demo
 
-👉 [View the Live Website](https://YOUR-USERNAME.github.io/life-net/)
+👉 [View the Live Website]
 
-*(Replace YOUR-USERNAME with your GitHub username)*
+
 
 ---
 
